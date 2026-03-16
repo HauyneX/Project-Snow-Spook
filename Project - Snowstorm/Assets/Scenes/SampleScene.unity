@@ -806,7 +806,7 @@ Light:
   serializedVersion: 12
   m_Type: 2
   m_Color: {r: 0.9411765, g: 0.46666667, b: 0.038047332, a: 1}
-  m_Intensity: 4
+  m_Intensity: 3
   m_Range: 20
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -848,7 +848,7 @@ Light:
   m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 5
+  m_BounceIntensity: 0
   m_ColorTemperature: 4531
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
@@ -889,7 +889,7 @@ Light:
   serializedVersion: 12
   m_Type: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2
+  m_Intensity: 0.002
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -932,7 +932,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 3006
+  m_ColorTemperature: 12000
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -2805,7 +2805,7 @@ TerrainCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_ProvidesContacts: 0
+  m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 2
   m_TerrainData: {fileID: 15600000, guid: 08efed4a962ff5741ad1d053df7c79c4, type: 2}
@@ -3322,7 +3322,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 12
   m_Type: 2
-  m_Color: {r: 1, g: 0.41070014, b: 0.18396229, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_Intensity: 2
   m_Range: 20
   m_SpotAngle: 30
@@ -3699,13 +3699,13 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1665543545}
   - {fileID: 410087041}
   - {fileID: 1642218485}
   - {fileID: 1785787282}
   - {fileID: 554609892}
   - {fileID: 1634446921}
   - {fileID: 984213956}
-  - {fileID: 1665543545}
   - {fileID: 524075687}
   - {fileID: 986283011}
   - {fileID: 1996593693}
