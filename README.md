@@ -11,7 +11,6 @@ As you begin to poke around you find clues to lead the way, but something feels 
 ### Implementations 
 * Lighting
 * Dynamic Footsteps
-* Snowfall needed
 * Clues needed
 * Better border of map
 * Police Car
