@@ -2440,7 +2440,7 @@ Transform:
   m_GameObject: {fileID: 524075683}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.4313918, z: -0, w: 0.9021647}
-  m_LocalPosition: {x: 0.702, y: 1.74, z: 11.307}
+  m_LocalPosition: {x: 0.702, y: 1.67, z: 11.307}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2487,8 +2487,8 @@ MonoBehaviour:
   playerCamera: {fileID: 330585545}
   walkSpeed: 3
   runSpeed: 7
-  jumpPower: 3
-  gravity: 20
+  jumpPower: 6
+  gravity: 13
   lookSpeed: 2
   lookXLimit: 45
   defaultHeight: 2
@@ -4492,43 +4492,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8438613900983817613, guid: dd77a45716004f5459d9424eab6d48d0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 86.86869
+      value: 86.615
       objectReference: {fileID: 0}
     - target: {fileID: 8438613900983817613, guid: dd77a45716004f5459d9424eab6d48d0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 42.781574
+      value: 42.727
       objectReference: {fileID: 0}
     - target: {fileID: 8438613900983817613, guid: dd77a45716004f5459d9424eab6d48d0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.0679321
+      value: -2.819
       objectReference: {fileID: 0}
     - target: {fileID: 8438613900983817613, guid: dd77a45716004f5459d9424eab6d48d0, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9941428
+      value: 0.918759
       objectReference: {fileID: 0}
     - target: {fileID: 8438613900983817613, guid: dd77a45716004f5459d9424eab6d48d0, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.10807537
+      value: 0.09988025
       objectReference: {fileID: 0}
     - target: {fileID: 8438613900983817613, guid: dd77a45716004f5459d9424eab6d48d0, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.379739
       objectReference: {fileID: 0}
     - target: {fileID: 8438613900983817613, guid: dd77a45716004f5459d9424eab6d48d0, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: -0.041282244
       objectReference: {fileID: 0}
     - target: {fileID: 8438613900983817613, guid: dd77a45716004f5459d9424eab6d48d0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 12.409
+      value: 8.753
       objectReference: {fileID: 0}
     - target: {fileID: 8438613900983817613, guid: dd77a45716004f5459d9424eab6d48d0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -45.589
       objectReference: {fileID: 0}
     - target: {fileID: 8438613900983817613, guid: dd77a45716004f5459d9424eab6d48d0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -8.83
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4763,7 +4763,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1017393941
 MonoBehaviour:
   m_ObjectHideFlags: 0
