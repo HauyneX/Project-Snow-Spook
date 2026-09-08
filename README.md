@@ -9,16 +9,22 @@ As you begin to poke around you find clues to lead the way, but something feels 
 ## :shipit::shipit::shipit: Todo :shipit::shipit::shipit:
 
 ### Implementations 
-* Lighting
+
+** Audio
 * Dynamic Footsteps
+* Sound (Creaking trees, windhowl)
+
+* Lighting
 * Clues needed
+* Dark Fog in Treeline
 * Better border of map
   ** Cold when leaving zone
-* Police Car
 * Signs and Fences
 * Gravel road?
-* Sound (Creaking trees, windhowl)
 * Easter Egg?
+* Add monster
+
+  
 ### Bugs 
 * Shader/Nature Occlusion
 * Hitboxes
