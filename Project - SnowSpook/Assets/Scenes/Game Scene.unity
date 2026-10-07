@@ -3050,7 +3050,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 204958957}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.5000003, z: -0, w: 0.86602527}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.61533, y: 1.4551196, z: -6.51072}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3067,8 +3067,8 @@ WindZone:
   m_Enabled: 1
   m_Mode: 0
   m_Radius: 20
-  m_WindMain: 8
-  m_WindTurbulence: 10
+  m_WindMain: 3
+  m_WindTurbulence: 15
   m_WindPulseMagnitude: 10
   m_WindPulseFrequency: 0.5
 --- !u!1 &212327373
@@ -17249,7 +17249,7 @@ Transform:
   m_GameObject: {fileID: 1309273893}
   serializedVersion: 2
   m_LocalRotation: {x: 0.0102368975, y: -0.027763639, z: 0.08099666, w: 0.99627507}
-  m_LocalPosition: {x: 0.07, y: -0.11, z: 0.76}
+  m_LocalPosition: {x: 0.05, y: -0.12, z: 1.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17296,9 +17296,9 @@ Light:
   m_Type: 0
   m_Color: {r: 0.8037735, g: 0.63071, b: 0, a: 1}
   m_Intensity: 10
-  m_Range: 30
-  m_SpotAngle: 85.579926
-  m_InnerSpotAngle: 21.80208
+  m_Range: 50
+  m_SpotAngle: 66.79265
+  m_InnerSpotAngle: 13.452232
   m_CookieSize2D: {x: 0.5, y: 0.5}
   m_Shadows:
     m_Type: 0
@@ -17337,7 +17337,7 @@ Light:
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 10
+  m_BounceIntensity: 20
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
@@ -28160,7 +28160,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6075279b93062439193840ae931d0aed, type: 2}
+  - {fileID: 2100000, guid: cc91b333ce9c91b4c894d859ee3315c9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -28296,7 +28296,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 3
       minMaxState: 0
-      scalar: 4
+      scalar: 20
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -28331,8 +28331,8 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 0.12452829, g: 0.12194374, b: 0.12194374, a: 0.7058824}
-      maxColor: {r: 0.3886792, g: 0.38061228, b: 0.38061228, a: 1}
+      minColor: {r: 0.94716984, g: 0.94716984, b: 0.94716984, a: 0.7058824}
+      maxColor: {r: 0.3886792, g: 0.38061228, b: 0.38061228, a: 0.78431374}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -28396,8 +28396,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 3
       minMaxState: 3
-      scalar: 0.6
-      minScalar: 0.3
+      scalar: 0.3
+      minScalar: 0.1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -28655,7 +28655,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 3
       minMaxState: 0
-      scalar: 400
+      scalar: 500
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -30738,8 +30738,8 @@ Transform:
   m_GameObject: {fileID: 2058893730}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 32.5, y: 19.6, z: 17.1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 28.6, z: 0}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 905222484}
