@@ -1,10 +1,14 @@
 using UnityEngine;
+using System.Collections; // Required for Coroutines/IEnumerator
 
 public class FlashlightController : MonoBehaviour
 {
     public GameObject flashlightLight; // Drag your Spotlight object here
     public AudioSource audioSource;    // Optional: Drag an AudioSource here for the click sound
     public AudioClip clickSound;       // Optional: Assign a crunchy click sound effect
+
+    [Header("Timings")]
+    public float turnOnDelay = 0.5f;   // Delay before the light turns on after clicking
 
     [Header("Battery Flicker")]
     public bool canFlicker = true;
@@ -14,6 +18,7 @@ public class FlashlightController : MonoBehaviour
 
     private bool isOn = false;
     private bool isFlickering = false;
+    private bool isTurningOn = false; // Prevents spamming clicks while waiting to turn on
     private Light lightComponent;
     private float defaultIntensity;
 
@@ -28,8 +33,8 @@ public class FlashlightController : MonoBehaviour
 
     void Update()
     {
-        // Toggle flashlight with the Left Mouse Click
-        if (Input.GetMouseButtonDown(1))
+        // Toggle flashlight with the Right Mouse Click (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1) && !isTurningOn)
         {
             ToggleFlashlight();
         }
@@ -47,16 +52,40 @@ public class FlashlightController : MonoBehaviour
     void ToggleFlashlight()
     {
         isOn = !isOn;
-        flashlightLight.SetActive(isOn);
 
-        // Play a satisfying retro click sound
+        // Play the click sound instantly every time
         if (audioSource && clickSound)
         {
             audioSource.PlayOneShot(clickSound);
         }
+
+        if (isOn)
+        {
+            // If turning ON, wait for the delay before activating the light object
+            StartCoroutine(TurnOnWithDelayRoutine());
+        }
+        else
+        {
+            // If turning OFF, happen instantly
+            flashlightLight.SetActive(false);
+        }
     }
 
-    System.Collections.IEnumerator FlickerRoutine()
+    IEnumerator TurnOnWithDelayRoutine()
+    {
+        isTurningOn = true;
+
+        // Wait for the specified delay (1 second) while the sound plays
+        yield return new WaitForSeconds(turnOnDelay);
+
+        // Turn the light on
+        flashlightLight.SetActive(true);
+        lightComponent.intensity = defaultIntensity; // Reset intensity in case it was flickering
+
+        isTurningOn = false;
+    }
+
+    IEnumerator FlickerRoutine()
     {
         isFlickering = true;
 
