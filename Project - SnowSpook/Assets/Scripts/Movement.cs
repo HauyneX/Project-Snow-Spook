@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
     private bool canMove = true;
 
     [Header("Head Bobbing")]
-    public float bobSpeed = 12f;      // How fast the head bobs (higher = faster steps)
+    public float bobSpeed = 7f;      // How fast the head bobs (higher = faster steps)
     public float bobAmount = 0.05f;    // How dramatic the bob is (keep it small for PS1!)
     private float defaultY = 0;        // Stores the original camera height
     private float timer = 0;
@@ -73,7 +73,7 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             characterController.height = defaultHeight;
-            walkSpeed = 4f;
+            walkSpeed = 3f;
             runSpeed = 8f;
         }
 
