@@ -23,6 +23,8 @@ As you begin to poke around you find clues to lead the way, but something feels 
 * Gravel road?
 * Easter Egg?
 * Add monster
+* Add music to Menu Scene
+* Add Loading Screen
 
   
 ### Bugs 
