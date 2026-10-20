@@ -11,11 +11,11 @@ As you begin to poke around you find clues to lead the way, but something feels 
 ### Implementations 
 
 ** Audio
-* Dynamic Footsteps
-* Sound (Creaking trees, windhowl)
+* Sound (Creaking trees)
 
-* Lighting
+
 * Clues needed
+* Lighting
 * Dark Fog in Treeline
 * Better border of map
   ** Cold when leaving zone
